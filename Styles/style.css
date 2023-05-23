@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(../Images/Altja_jõgi_Lahemaal.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: -0.25rem;
+}
+
+.form-container {
+  width: 400px;
+  height: 560px;
+  background-color: rgb(234, 237, 237, 0.35);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.name-container,
+.email-container,
+.password-container,
+.confirmpassword-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input {
+  height: 2.25rem;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  border-radius: 8px;
+  transition: all 0.5s ease-in;
+}
+
+.input:hover {
+  border-color: rgb(2, 127, 2);
+}
+
+.gender-category {
+  display: flex;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 0.75rem 0;
+  justify-content: space-between;
+}
+
+#dot-1,#dot-2,#dot-3{
+  accent-color: green;
+}
+
+.gender-category label{
+  cursor: pointer;
+}
+
+.country-container{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.country-container select{
+  height: 2.25rem;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  border-radius: 8px;
+}
+
+.country-container select:hover{
+  border-color: rgb(2, 127, 2);
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+
+.submit-button{
+  padding: 0.65rem;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  margin-top: 1rem;
+  transition: all 0.5s ease-in;
+  background: rgb(41, 211, 41);
+}
+
+.submit-button:hover{
+  background: green;
+  cursor: pointer;
+}

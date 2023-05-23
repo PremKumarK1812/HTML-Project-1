@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Project</title>
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./Images/Icon.png" type="image/x-icon">
+  
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="./Styles/normalize .css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./Styles/style.css">
+</head>
+<body>
+  <form class="form-container">
+    <h1 class="title">REGISTRATION FORM</h1>
+    <div class="name-container">
+      <label for="fullName">FULL NAME</label>
+      <input type="text" id="fullName" placeholder="Enter your Name" class="input " required="">
+      <small class="error-msg"></small>
+    </div>
+    <div class="email-container">
+      <label for="emailAddress">EMAIL ADDRESS</label>
+      <input type="email" id="emailAddress" placeholder="Enter your Email" class="input" required="">
+      <small class="error-msg"></small>
+    </div>
+    <div class="password-container">
+      <label for="password">PASSWORD</label>
+      <input type="password" id="password" placeholder="Enter the Password" class="input" required="">
+      <small class="error-msg"></small>
+    </div>
+    <div class="confirmpassword-container">
+      <label for="confirmPassword">CONFIRM PASSWORD</label>
+      <input type="password" id="confirmPassword" placeholder="Enter the Password" class="input" required="">
+      <small class="error-msg"></small>
+    </div>
+    <div class="gender-container">
+      <span class="gender-title">GENDER</span>
+      <div class="gender-category">
+        <input type="radio" name="gender" id="dot-1" required="">
+        <label for="dot-1">
+          <span class="dot-one"></span>
+          <span class="gender">Male</span>
+        </label>
+        <input type="radio" name="gender" id="dot-2" required="">
+        <label for="dot-2">
+          <span class="dot-two"></span>
+          <span class="gender">Female</span>
+        </label>
+        <input type="radio" name="gender" id="dot-3" required="">
+        <label for="dot-3">
+          <span class="dot-three"></span>
+          <span class="gender">Prefer not to Say</span>
+        </label>
+      </div>
+    </div>
+    <div class="country-container">
+      <label for="country">COUNTRY</label>
+      <select>
+        <option>Select a country</option>
+        <option>India</option>
+        <option>Australia</option>
+        <option>United Kingdom</option>
+        <option>United Stated</option>
+        <option>Germany</option>
+      </select>
+    </div>
+    <button type="submit" class="submit-button">SUBMIT</button>
+  </form>
+
+  
+  <!-- Custom JS -->
+  <script src="./Scripts/script.js"></script>
+</body>
+</html>
